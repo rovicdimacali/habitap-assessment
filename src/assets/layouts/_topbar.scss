@@ -1,0 +1,32 @@
+.topbar {
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: var(--surface-50);
+  z-index: 1;
+  position: sticky;
+  top: 0;
+
+  img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .header-container {
+    h2 {
+      margin: 0;
+
+      @include m-phone {
+        font-size: 20px;
+        text-align: end;
+      }
+
+      @include sm-phone {
+        font-size: 20px;
+        text-align: end;
+      }
+    }
+  }
+}

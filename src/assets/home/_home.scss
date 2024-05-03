@@ -1,0 +1,25 @@
+.home-page {
+  height: 100vh;
+  background: var(--surface-50);
+
+  .header {
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    gap: 10px;
+
+    small {
+      @include lg-phone {
+        display: none;
+      }
+
+      @include m-phone {
+        display: none;
+      }
+
+      @include sm-phone {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "id": "039d80cc-17c2-4129-9973-bdd2dc2e655d",
+      "title": "Prepare Project Proposal",
+      "description": "Write and finalize the project proposal document for the upcoming conference.",
+      "due_date": "2024-05-10T00:00:00.000Z",
+      "status": "In Progress"
+    },
+    {
+      "id": "91f11535-5af5-4520-9664-d12a6b73ee1a",
+      "title": "Prepare presentation slides",
+      "description": "Create slides for the project presentation. Include key points and visuals.",
+      "due_date": "2024-05-30T16:00:00.000Z",
+      "status": "Pending"
+    },
+    {
+      "id": "dd8a24cc-f3eb-49e1-8c37-9b8d63eddb0e",
+      "title": "Update website content",
+      "description": "Update website content with recent achievements and news.",
+      "due_date": "2024-05-23T16:00:00.000Z",
+      "status": "Completed"
+    },
+    {
+      "id": "a5646e93-b762-40a8-923d-48b346b4b472",
+      "title": "Update website footer",
+      "description": "Update website content with recent achievements and news.",
+      "due_date": "2024-05-20",
+      "status": "Pending"
+    },
+    {
+      "id": "a8ee7b52-1f80-482c-bc1a-60cc80b0688b",
+      "title": "Sample Task",
+      "description": "Hello World",
+      "due_date": "2024-05-10T16:00:00.000Z",
+      "status": "Cancelled"
+    }
+  ]
+}

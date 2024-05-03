@@ -1,0 +1,127 @@
+.task-management-container {
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+  gap: 10px;
+
+  .tasks-col {
+    padding: 20px;
+    transition: 0.3s all;
+    border-radius: 15px;
+
+    flex-grow: 1;
+    flex-basis: 300px;
+
+    h3 {
+      margin: 0 0 10px 0;
+    }
+    .list-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      height: 100%;
+      transition: 0.3s all;
+
+      .card {
+        position: relative;
+
+        .action-btns {
+          position: absolute;
+          top: -15px;
+          right: -7px;
+          color: white;
+          gap: 5px;
+
+          .edit-btn {
+            padding: 6px;
+          }
+        }
+      }
+
+      .pending-card {
+        background: rgb(238, 228, 204);
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
+
+        .action-btns {
+          .edit-btn {
+            background: rgb(99, 74, 6);
+            outline: none;
+            border: none;
+          }
+        }
+      }
+
+      .in-progress-card {
+        background: rgb(225, 227, 248);
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
+
+        .action-btns {
+          .edit-btn {
+            background: rgb(71, 74, 117);
+            outline: none;
+            border: none;
+          }
+        }
+      }
+
+      .completed-card {
+        background: rgb(213, 252, 237);
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
+
+        .action-btns {
+          .edit-btn {
+            background: rgb(31, 110, 80);
+            outline: none;
+            border: none;
+          }
+        }
+      }
+
+      .cancelled-card {
+        background: rgb(236, 175, 175);
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
+
+        .action-btns {
+          .edit-btn {
+            background: rgb(110, 62, 62);
+            outline: none;
+            border: none;
+          }
+        }
+      }
+
+      .dragging {
+        cursor: grabbing;
+      }
+    }
+  }
+
+  .pending {
+    background: rgb(238, 207, 123);
+  }
+  .in-progress {
+    background: rgb(190, 196, 255);
+  }
+  .completed {
+    background: rgb(123, 238, 194);
+  }
+  .cancelled {
+    background: rgb(238, 123, 123);
+  }
+}
