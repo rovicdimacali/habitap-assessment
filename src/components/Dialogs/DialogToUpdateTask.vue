@@ -63,7 +63,7 @@ const updateTask = async (id: string, obj: object) => {
       toast.add({
         severity: "info",
         summary: "Updated",
-        detail: "Task Title Updated",
+        detail: "Task Updated",
         life: 3000,
       });
       emit("submit");
