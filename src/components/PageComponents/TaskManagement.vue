@@ -80,6 +80,7 @@ const updateTask = async (id: string, obj: object) => {
       detail: "Task Status Updated",
       life: 3000,
     });
+    fetchTasks();
   } catch (error) {
     console.error(error);
     toast.add({
